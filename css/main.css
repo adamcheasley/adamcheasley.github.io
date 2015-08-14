@@ -1,0 +1,16 @@
+body {
+    background-color: #fff;
+    font-family: Monaco, monospace;
+    color: #666;
+}
+
+a {
+    color: #66CCFF;
+    text-decoration: none;
+}
+
+h1 {
+    font:             Bold 55px Helvetica, Tahoma, sans-serif;
+    letter-spacing:   -0.07em;
+    width: 100%
+}
