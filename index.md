@@ -13,3 +13,6 @@ Bristol, UK.
 [Projects](/projects/index.html)  
 [Photography](http://www.adamcheasley.com/)  
 [Flickr](http://www.flickr.com/photos/someplacenice/)  
+
+I would love to hear from you:  
+adam at someplacenice dot co dot uk
