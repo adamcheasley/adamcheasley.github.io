@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description"
+          content="Someplace nice is the home of Adam Forsythe-Cheasley. A software engineer from Bristol, UK." />
+    <meta name="author" content="Adam Forsythe-Cheasley" />
+    <title>Someplace Nice</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+
+  <body>
+    <h1>
+      <a href="/blog/index.html">Someplace nice</a>
+    </h1>
+    
+    <p class="muted">29 October 2013</p>
+    
+    <p>I recently attended Plone Conference 2012, in Arnhem, Holland. As usual the conference was great, with some excellent talks. One of the main talks that caught my attention, was the talk on plone.api.</p>
+
+<p>I had heard bits and pieces about an api for plone a couple of months prior, but had yet to look into it further. My initial reaction was, "why didn't we think of this before?". There are parts of plone and zope, that are quite inconsistent. Naming conventions change around quite a bit and imports can be from obscure parts of different eggs, so an api to simplify the main jobs that we do 80% of the time is a great idea.</p>
+
+<p>I was lucky enough to be able to stay for the sprints, so I got involved in plone.api along with some other plone people. It's still in the beta phase so there were a few functions that hadn't been implemented yet, but by the end of the sprints, we'd filled in most of the gaps.</p>
+
+<p>The great thing about this api, is it makes regular tasks like content creation, user manipulation and creating and manipulating groups really easy. Here is an example of how you would get the portal with plone.api:</p>
+
+<pre><code>from plone import api
+portal = api.portal.get()
+</code></pre>
+
+<p>Which is so much easier to remember than either using the <code>portal_url</code> tool or the <code>plone_portal_state</code> multiadapter. Creating content is just as easy:</p>
+
+<pre><code>from plone import api  
+#First get the portal
+portal = api.portal.get()
+#Now we can create a document
+doc= api.content.create(type='Document', title='My Content', container=portal)
+</code></pre>
+
+<p>One last example, getting a user:</p>
+
+<pre><code>from plone import api
+user = api.user.get(username='adam')
+</code></pre>
+
+<p>plone.api is just about in beta phase now, but it's definitely worth checking out. You can read more here: <a href="http://ploneapi.readthedocs.org/en/0.1b1/">read the docs</a></p>
+
+    
+  </body>
+
+</html>

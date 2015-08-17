@@ -8,7 +8,8 @@ layout: default
 Software developer and mathematical hobbyist.  
 Bristol, UK.
 
-[Curriculum vitæ](https://docs.google.com/document/d/1E12laGHJfH6mGAr6N2Hfm41x5Xi4aKiSwxxWUx4pbmw/edit?usp=sharing)  
+[Curriculum vitae](https://docs.google.com/document/d/1E12laGHJfH6mGAr6N2Hfm41x5Xi4aKiSwxxWUx4pbmw/edit?usp=sharing)  
+[Blog](/blog/index.html)  
 [Linkedin](http://www.linkedin.com/in/adamcheasley)  
 [Projects](/projects/index.html)  
 [Photography](http://www.adamcheasley.com/)  

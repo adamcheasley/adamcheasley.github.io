@@ -4,7 +4,7 @@
     <meta name="description"
           content="Someplace nice is the home of Adam Forsythe-Cheasley. A software engineer from Bristol, UK." />
     <meta name="author" content="Adam Forsythe-Cheasley" />
-    <title>Someplace Nice</title>
+    <title>{{ site.name }}</title>
     <link rel="stylesheet" type="text/css" href="/css/main.css"/>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
     <meta name="MobileOptimized" content="width" />
@@ -12,12 +12,14 @@
   </head>
 
   <body>
-    <h1><a href="/">Someplace nice</a></h1>
-
-<h2>Speak and Sniff</h2>
-
-<p>The idea of this project was to sniff the local wifi network for packets sent in the clear and read them out via a voice simulator.</p>
-
+    <h1>
+      <a href="/blog/index.html">Someplace nice</a>
+    </h1>
+    
+    <p class="muted">{{ page.date | date_to_long_string }}</p>
+    
+    {{ content }}
+    
   </body>
 
 </html>

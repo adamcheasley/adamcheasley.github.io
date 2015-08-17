@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description"
+          content="Someplace nice is the home of Adam Forsythe-Cheasley. A software engineer from Bristol, UK." />
+    <meta name="author" content="Adam Forsythe-Cheasley" />
+    <title>Someplace Nice</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+
+  <body>
+    <h1>
+      <a href="/blog/index.html">Someplace nice</a>
+    </h1>
+    
+    <p class="muted">22 May 2014</p>
+    
+    <p>A strange property of putting logic in dexterity content types
+        has bitten me a couple of times. Here's the issue;
+        You are advised, if you wish to override the given accessors and
+        mutators of the object, to do something like the following:</p>
+
+<pre><code>          @property
+          def my_field(self):
+            # get some attribute
+
+          @my_field.setter
+          def my_field(self, value):
+                # do something else before setting the value
+</code></pre>
+
+<p>This is fine, and is a usual python convention, <em>except</em> that
+        the 'self' object will not be acquisition wrapped.</p>
+
+<p>This means that if you try to do anything which relies on acquisition,
+        which is pretty much anything in Plone, then you will run into problems.
+        If you find that you are running into permissions issues, or authentication
+        issues in code within your object, it's probably to do with this issue.</p>
+
+<p>The simple fix here would just be to change the setter to something like:</p>
+
+<pre><code>          def set_my_field(self, value):
+                # do something else before setting the value
+</code></pre>
+
+<p>'self' would now be acquisition wrapped.</p>
+
+<p>The other option of course is to move any business logic like this
+        out of the model, which is probably what I would advise.</p>
+
+    
+  </body>
+
+</html>

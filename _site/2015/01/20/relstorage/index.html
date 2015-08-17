@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description"
+          content="Someplace nice is the home of Adam Forsythe-Cheasley. A software engineer from Bristol, UK." />
+    <meta name="author" content="Adam Forsythe-Cheasley" />
+    <title>Someplace Nice</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+
+  <body>
+    <h1>
+      <a href="/blog/index.html">Someplace nice</a>
+    </h1>
+    
+    <p class="muted">20 January 2015</p>
+    
+    <p>At ploneconf 2014, Matthew Sital-Singh and I gave a talk on using
+          relstorage in Plone. Our main use case for this was that one of our
+          biggest sites still uses FileStorage in the ZODB, which means that
+          this file and zeo are a single point of failure.</p>
+
+<p>Switching your plone site from using FileStorage to using RelStorage
+          is quite simple. You can simply add the following to your buildout,
+          under the instance part:</p>
+
+<pre><code>rel-storage =
+    type postgresql
+    db plone
+    user plone
+    passwd PASSWORD
+</code></pre>
+
+<p>If you this is a fresh site, you will be up and running in RelStorage mode. The ZODB
+          will write all data to this relational database. Notice that I've set it to use
+          postgres in the config above. There are other options here, including mysql, but
+          we ran into some pretty big issues when using mysql, so I would strongly recommend
+          postgres.</p>
+
+<p>If however, this is not a new site, you would need to migrate your data from FileStorage
+          into the relational database. This can be achieved with the <a href="https://pypi.python.org/pypi/RelStorage#zodbconvert">zodbconvert script</a></p>
+
+<p>You can <a href="https://docs.google.com/presentation/d/1zeJ7MiMitejAdSSUkntHrqHs_Iu9h4q1vYJ1GwQbnpI/edit?usp=sharing">view our slides from the presentation here.</a>
+          This also contains links to stats on the type of speed increases you are likely to see
+          when using RelStorage.
+          There is also a <a href="https://vimeo.com/111051175">video</a>
+          of our talk available on vimeo.</p>
+
+    
+  </body>
+
+</html>

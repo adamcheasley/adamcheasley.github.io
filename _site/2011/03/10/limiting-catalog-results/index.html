@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description"
+          content="Someplace nice is the home of Adam Forsythe-Cheasley. A software engineer from Bristol, UK." />
+    <meta name="author" content="Adam Forsythe-Cheasley" />
+    <title>Someplace Nice</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+
+  <body>
+    <h1>
+      <a href="/blog/index.html">Someplace nice</a>
+    </h1>
+    
+    <p class="muted">10 March 2011</p>
+    
+    <p>After some confusion today regarding the "sort_limit" index in plone's catalog, I discovered the following:</p>
+
+<blockquote><p>The sort_limit is only a hint for the search algorhitms and can potentially return a few more items, so it's preferable to use both
+<code>sort_limit</code> and slicing simultaneously</p></blockquote>
+
+<p>So something like this:<br/>
+<code>
+limit = 10
+    results = portal_catalog.searchResult(
+        portal_type='Folder'
+        sort_limit=limit)
+    return results[:limit]
+</code></p>
+
+<p>Discovered this on the following page and it seems like a good resource for any question regarding catalog indexing in plone:
+<a href="http://plone.org/documentation/manual/developer-manual/indexing-and-searching/querying-the-catalog">querying-the-catalog</a></p>
+
+    
+  </body>
+
+</html>

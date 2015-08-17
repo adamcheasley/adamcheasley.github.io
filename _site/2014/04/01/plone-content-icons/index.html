@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description"
+          content="Someplace nice is the home of Adam Forsythe-Cheasley. A software engineer from Bristol, UK." />
+    <meta name="author" content="Adam Forsythe-Cheasley" />
+    <title>Someplace Nice</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
+
+  <body>
+    <h1>
+      <a href="/blog/index.html">Someplace nice</a>
+    </h1>
+    
+    <p class="muted">01 April 2014</p>
+    
+    <p>Due to the slow move from Archetypes to Dexterity, I have been dealing
+with a lot of sites recently that contain both Archetypes and Dexterity
+content types mixed together. For the most part this works fine, but there
+are a few places where you find yourself writing different code depending
+on which type of object you have at any one time.</p>
+
+<p>A perfect example of this came up recently; when trying to list
+              objects within a folder that were from both types. The problem came
+              when trying to show icons for these objects. In Archetypes, you could
+              simply do:</p>
+
+<pre><code>plone_view.getIcon()  
+</code></pre>
+
+<p>This would return you an object which implements IContentIcon, on which
+              you would usually call the html_tag method. This would give you a fully
+              formed img tag which you could put straight into a template. With
+              dexterity, this is now deprecated.</p>
+
+<p>The difference with dexterity is that in an Archetypes definition of
+              a content type, you would define a content_icon property:<br /><br /></p>
+
+<pre><code>&lt;property name="content_icon"&gt;MyType.gif&lt;/property&gt;
+</code></pre>
+
+<p>where as in dexterity, we now define an icon expression:</p>
+
+<pre><code>&lt;property name="icon_expr"&gt;string:++resource++my.package/images/my_type.png&lt;/property&gt;
+</code></pre>
+
+<p>The former is assumed to be in a skins folder, the latter is an expression
+              containing the path to the image.</p>
+
+<p>The fix here involves using the portal types tool and this handy function
+              from CMFCore called 'createExprContext':</p>
+
+<pre><code>from Products.CMFCore.Expression import createExprContext  
+
+portal_types_tool = api.portal.get_tool('portal_types')
+type_info = portal_types_tool.getTypeInfo(portal_type)
+icon_ob = type_info.getIconExprObject()
+portal = api.portal.get()
+exp_context = createExprContext(
+portal, portal, portal)
+return icon_ob(exp_context)
+</code></pre>
+
+<p>This will return an absolute path to the icon in the context of the
+          portal. This can then be used in tal for either archetypes or dexterity.</p>
+
+    
+  </body>
+
+</html>
