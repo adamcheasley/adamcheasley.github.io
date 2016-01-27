@@ -5,14 +5,14 @@ layout: default
 
 # Adam Forsythe-Cheasley
 
-Software developer and mathematical hobbyist.  
+Software developer and mathematical hobbyist.
 Bristol, UK.
 
-[Curriculum vitae](https://docs.google.com/document/d/1E12laGHJfH6mGAr6N2Hfm41x5Xi4aKiSwxxWUx4pbmw/edit?usp=sharing)  
-[Blog](/blog/)  
-[Networks/Communities](/networks/)  
-[Projects](/projects/)  
-[Photography](http://www.adamcheasley.com/)  
+[Curriculum vitae](https://drive.google.com/file/d/0BzFGayw0cbzGSm1sZWJRUGxUZnM/view?usp=sharing)
+[Blog](/blog/)
+[Networks/Communities](/networks/)
+[Projects](/projects/)
+[Photography](http://www.adamcheasley.com/)
 
-I would love to hear from you:  
+I would love to hear from you:
 adam at someplacenice dot co dot uk
