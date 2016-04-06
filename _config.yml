@@ -4,4 +4,4 @@ description:  Software developer and mathematical hobbyist.
 url: "http://localhost:4000"
 
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
