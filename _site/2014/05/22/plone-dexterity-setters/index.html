@@ -19,37 +19,39 @@
     <p class="muted">22 May 2014</p>
     
     <p>A strange property of putting logic in dexterity content types
-        has bitten me a couple of times. Here's the issue;
-        You are advised, if you wish to override the given accessors and
-        mutators of the object, to do something like the following:</p>
+	    has bitten me a couple of times. Here’s the issue;
+	    You are advised, if you wish to override the given accessors and
+	    mutators of the object, to do something like the following:</p>
 
-<pre><code>          @property
-          def my_field(self):
-            # get some attribute
-
-          @my_field.setter
-          def my_field(self, value):
-                # do something else before setting the value
-</code></pre>
+<div class="highlighter-rouge"><pre class="highlight"><code>	      <span class="k">@property</span>
+	      <span class="n">def</span> <span class="n">my_field</span><span class="p">(</span><span class="n">self</span><span class="p">)</span><span class="o">:</span>
+	        <span class="cp"># get some attribute
+</span>
+	      <span class="err">@my</span><span class="n">_field</span><span class="p">.</span><span class="n">setter</span>
+	      <span class="n">def</span> <span class="n">my_field</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span><span class="o">:</span>
+                <span class="cp"># do something else before setting the value
+</span></code></pre>
+</div>
 
 <p>This is fine, and is a usual python convention, <em>except</em> that
-        the 'self' object will not be acquisition wrapped.</p>
+	    the ‘self’ object will not be acquisition wrapped.</p>
 
 <p>This means that if you try to do anything which relies on acquisition,
-        which is pretty much anything in Plone, then you will run into problems.
-        If you find that you are running into permissions issues, or authentication
-        issues in code within your object, it's probably to do with this issue.</p>
+	    which is pretty much anything in Plone, then you will run into problems.
+	    If you find that you are running into permissions issues, or authentication
+	    issues in code within your object, it’s probably to do with this issue.</p>
 
 <p>The simple fix here would just be to change the setter to something like:</p>
 
-<pre><code>          def set_my_field(self, value):
+<div class="highlighter-rouge"><pre class="highlight"><code>	      def set_my_field(self, value):
                 # do something else before setting the value
 </code></pre>
+</div>
 
-<p>'self' would now be acquisition wrapped.</p>
+<p>‘self’ would now be acquisition wrapped.</p>
 
 <p>The other option of course is to move any business logic like this
-        out of the model, which is probably what I would advise.</p>
+	    out of the model, which is probably what I would advise.</p>
 
     
   </body>

@@ -18,67 +18,61 @@
     
     <p class="muted">23 June 2012</p>
     
-    <p>Recently I was looking for a list of all events available in plone. By "events" what I actually mean is:</p>
+    <p>Recently I was looking for a list of all events available in plone. By “events” what I actually mean is:<br />
+&gt;Zope provides an events system. Various components (e.g the standard add and edit forms) <em>notify</em> any number of <em>event subscribers</em> (also known as <em>event handlers</em>) of a particular event.</p>
 
-<blockquote><p>Zope provides an events system. Various components (e.g the standard add and edit forms) <em>notify</em> any number of <em>event subscribers</em> (also known as <em>event handlers</em>) of a particular event.</p></blockquote>
-
-<p>So these are events you can subscribe to and trigger custom code when they are fired. I wasn't able to find a complete list so I've decided to compile one myself:<br/>
+<p>So these are events you can subscribe to and trigger custom code when they are fired. I wasn’t able to find a complete list so I’ve decided to compile one myself:<br />
 From zope.lifecycleevent.interfaces:</p>
 
 <ul>
-<li>IObjectCreatedEvent</li>
-<li>IObjectCopiedEvent</li>
-<li>IObjectModifiedEvent</li>
-<li>IObjectMovedEvent</li>
-<li>IObjectAddedEvent</li>
-<li>IObjectRemovedEvent</li>
+  <li>IObjectCreatedEvent</li>
+  <li>IObjectCopiedEvent</li>
+  <li>IObjectModifiedEvent</li>
+  <li>IObjectMovedEvent</li>
+  <li>IObjectAddedEvent</li>
+  <li>IObjectRemovedEvent</li>
 </ul>
-
 
 <p>From Products.Archetypes.interfaces:</p>
 
 <ul>
-<li>IObjectInitializedEvent</li>
-<li>IWebDAVObjectInitializedEvent</li>
-<li>IObjectEditedEvent</li>
-<li>IWebDAVObjectEditedEvent</li>
-<li>IEditBegunEvent</li>
-<li>IEditCancelledEvent</li>
+  <li>IObjectInitializedEvent</li>
+  <li>IWebDAVObjectInitializedEvent</li>
+  <li>IObjectEditedEvent</li>
+  <li>IWebDAVObjectEditedEvent</li>
+  <li>IEditBegunEvent</li>
+  <li>IEditCancelledEvent</li>
 </ul>
-
 
 <p>From zope.app.container.interfaces:</p>
 
 <ul>
-<li>IObjectMovedEvent</li>
-<li>IObjectAddedEvent</li>
-<li>IObjectRemovedEvent</li>
-<li>IContainerModifiedEvent</li>
+  <li>IObjectMovedEvent</li>
+  <li>IObjectAddedEvent</li>
+  <li>IObjectRemovedEvent</li>
+  <li>IContainerModifiedEvent</li>
 </ul>
-
 
 <p>From Products.CMFCore.interfaces:</p>
 
 <ul>
-<li>IWorkflowActionEvent</li>
-<li>IActionWillBeInvokedEvent</li>
-<li>IActionRaisedExceptionEvent</li>
-<li>IActionSucceededEvent</li>
+  <li>IWorkflowActionEvent</li>
+  <li>IActionWillBeInvokedEvent</li>
+  <li>IActionRaisedExceptionEvent</li>
+  <li>IActionSucceededEvent</li>
 </ul>
-
 
 <p>From Products.DCWorkflow.interfaces:</p>
 
 <ul>
-<li>ITransitionEvent</li>
-<li>IBeforeTransitionEvent</li>
-<li>IAfterTransitionEvent</li>
+  <li>ITransitionEvent</li>
+  <li>IBeforeTransitionEvent</li>
+  <li>IAfterTransitionEvent</li>
 </ul>
-
 
 <p>For more information visit the following links:</p>
 
-<p><a href="http://plone.org/products/dexterity/documentation/manual/five.grok/core-components/events">http://plone.org/products/dexterity/documentation/manual/five.grok/core-components/events</a><br/>
+<p><a href="http://plone.org/products/dexterity/documentation/manual/five.grok/core-components/events">http://plone.org/products/dexterity/documentation/manual/five.grok/core-components/events</a><br />
 <a href="http://plone.org/documentation/kb/five-zope3-walkthrough/events">http://plone.org/documentation/kb/five-zope3-walkthrough/events</a></p>
 
     

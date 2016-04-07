@@ -18,13 +18,15 @@
     
     <p class="muted">10 March 2011</p>
     
-    <p>After some confusion today regarding the "sort_limit" index in plone's catalog, I discovered the following:</p>
+    <p>After some confusion today regarding the “sort_limit” index in plone’s catalog, I discovered the following:</p>
 
-<blockquote><p>The sort_limit is only a hint for the search algorhitms and can potentially return a few more items, so it's preferable to use both
-<code>sort_limit</code> and slicing simultaneously</p></blockquote>
+<blockquote>
+  <p>The sort_limit is only a hint for the search algorhitms and can potentially return a few more items, so it’s preferable to use both
+<code class="highlighter-rouge">sort_limit</code> and slicing simultaneously</p>
+</blockquote>
 
-<p>So something like this:<br/>
-<code>
+<p>So something like this:<br />
+<code class="highlighter-rouge">
 limit = 10
     results = portal_catalog.searchResult(
         portal_type='Folder'

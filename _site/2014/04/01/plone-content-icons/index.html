@@ -29,8 +29,10 @@ on which type of object you have at any one time.</p>
               when trying to show icons for these objects. In Archetypes, you could
               simply do:</p>
 
-<pre><code>plone_view.getIcon()  
+<div class="highlighter-rouge"><pre class="highlight"><code>plone_view.getIcon()  
+
 </code></pre>
+</div>
 
 <p>This would return you an object which implements IContentIcon, on which
               you would usually call the html_tag method. This would give you a fully
@@ -40,21 +42,23 @@ on which type of object you have at any one time.</p>
 <p>The difference with dexterity is that in an Archetypes definition of
               a content type, you would define a content_icon property:<br /><br /></p>
 
-<pre><code>&lt;property name="content_icon"&gt;MyType.gif&lt;/property&gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;property name="content_icon"&gt;MyType.gif&lt;/property&gt;
 </code></pre>
+</div>
 
 <p>where as in dexterity, we now define an icon expression:</p>
 
-<pre><code>&lt;property name="icon_expr"&gt;string:++resource++my.package/images/my_type.png&lt;/property&gt;
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;property name="icon_expr"&gt;string:++resource++my.package/images/my_type.png&lt;/property&gt;
 </code></pre>
+</div>
 
 <p>The former is assumed to be in a skins folder, the latter is an expression
               containing the path to the image.</p>
 
 <p>The fix here involves using the portal types tool and this handy function
-              from CMFCore called 'createExprContext':</p>
+              from CMFCore called ‘createExprContext’:</p>
 
-<pre><code>from Products.CMFCore.Expression import createExprContext  
+<div class="highlighter-rouge"><pre class="highlight"><code>from Products.CMFCore.Expression import createExprContext  
 
 portal_types_tool = api.portal.get_tool('portal_types')
 type_info = portal_types_tool.getTypeInfo(portal_type)
@@ -64,9 +68,10 @@ exp_context = createExprContext(
 portal, portal, portal)
 return icon_ob(exp_context)
 </code></pre>
+</div>
 
 <p>This will return an absolute path to the icon in the context of the
-          portal. This can then be used in tal for either archetypes or dexterity.</p>
+	      portal. This can then be used in tal for either archetypes or dexterity.</p>
 
     
   </body>
