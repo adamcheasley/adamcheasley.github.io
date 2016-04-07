@@ -14,5 +14,5 @@ JSON Web Tokens (JWT). From https://jwt.io/introduction/
 
 Essentially, this gives us a simple, stateless way to authenticate requests coming into the api. Angular makes its first request out to an endpoint, with a username and password, and gets back a token. It can then use this token to authenticate subsequent requets. 
 
-There is a great package that integrates with Django Rest Framework making all this very easy on the backend:
+There is a great package that integrates with Django Rest Framework making all this very easy on the backend:  
 [django-rest-framework-jwt](https://getblimp.github.io/django-rest-framework-jwt/)
