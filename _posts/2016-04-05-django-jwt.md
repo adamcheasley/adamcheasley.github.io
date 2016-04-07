@@ -16,3 +16,5 @@ Essentially, this gives us a simple, stateless way to authenticate requests comi
 
 There is a great package that integrates with Django Rest Framework making all this very easy on the backend:  
 [django-rest-framework-jwt](https://getblimp.github.io/django-rest-framework-jwt/)
+
+It's also worth checking out [this excellent blog post](http://jpadilla.com/post/73791304724/auth-with-json-web-tokens) by Jose Padilla.
