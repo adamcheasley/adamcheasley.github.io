@@ -12,4 +12,7 @@ JSON Web Tokens (JWT). From https://jwt.io/introduction/
 
 > JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
 
-Essentially, this gives us a simple, stateless way to authenticate requests coming into the api.
+Essentially, this gives us a simple, stateless way to authenticate requests coming into the api. Angular makes its first request out to an endpoint, with a username and password, and gets back a token. It can then use this token to authenticate subsequent requets. 
+
+There is a great package that integrates with Django Rest Framework making all this very easy on the backend:
+[django-rest-framework-jwt](https://getblimp.github.io/django-rest-framework-jwt/)
