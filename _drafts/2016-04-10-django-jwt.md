@@ -8,4 +8,6 @@ On a recent project, we decided to fully decouple the front and back ends using 
 create a back end API and Angular to create a front end application to interact with the API.
 
 I looked around at the myriad of possibilities for authentication with the API, and decided to take a look at 
-JSON Web Tokens (JWT).
+JSON Web Tokens (JWT). From https://jwt.io/introduction/
+
+> JSON Web Token (JWT) is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.
