@@ -12,7 +12,6 @@ Bristol, UK.
 [Blog](/blog/)  
 [Networks/Communities](/networks/)  
 [Projects](/projects/)  
-[Photography](http://www.adamcheasley.com/)  
 
 I would love to hear from you:
 adam at someplacenice dot co dot uk
