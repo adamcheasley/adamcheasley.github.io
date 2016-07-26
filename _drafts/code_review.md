@@ -1,4 +1,8 @@
-# Code review
+---
+title: "Code review"
+layout: post
+description: My thoughts on giving good code review.
+---
 
 I've been working with code review for about 3 years now. In my current position, all code goes through a pull request, without exception. Over the years and different projects, I have noticed though that the quality of code review can vary quite a bit, so I thought I'd write about what I try to do when reviewing someone else's code.
 
@@ -13,4 +17,6 @@ Another pitfall I see, even from experienced developers, is that the reviewer ju
 Only after I've answered these questions will I then attempt to look at the style of the code and where it could be cleaned up. 
 
 For really large features, there's really nothing better than to checkout the code and run it yourself. This can really help with understanding the flow of the code as a whole, as you understand the outcome. This might also enable you to spot bugs that just reading the code might miss.
+
+The final aspect I would say is often overlooked, especially in web development, is looking for performance issues in the code. Again, this can be difficult to spot just by reading the code over once, but it's certainly something to have in your mind when reviewing.
 
