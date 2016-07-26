@@ -8,7 +8,8 @@ I've been working with code review for about 3 years now. In my current position
 
 First of all, the most important thing is; Don't take it personally. I see this a lot, especially with developers who are new to code review. Any comment or suggestion is not meant as a personal attack. We are all in this together, and we both want the best code possible and for the code to follow known best practices.
 
-Another pitfall I see, even from experienced developers, is that the reviewer just makes superficial comments regarding code style. The first thing I always try to do is review the meaning of the code, not the style. Attempt to grok the fix/feature in its entirety:  
+Another pitfall I see, even from experienced developers, is that the reviewer just makes superficial comments regarding code style. The first thing I always try to do is review the meaning of the code, not the style. Attempt to grok the fix/feature in its entirety:
+
 - What is this code doing? 
 - Are there any hidden side effects? 
 - What has been removed? Is that going to be ok? 
