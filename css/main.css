@@ -22,3 +22,7 @@ h1 {
 .post h4 {
     margin-bottom: 0;
 }
+
+.small {
+    font-size: 0.6em;
+}
