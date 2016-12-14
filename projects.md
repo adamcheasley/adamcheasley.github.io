@@ -15,8 +15,9 @@ The slides from my talk given with Matthew Sital-Singh, "Relstorage for mere mor
 
 Most of my active projects can be viewed and downloaded via my github account: [github.com/adamcheasley](https://github.com/adamcheasley). It's all open source so feel free to take anything you need.
 
+- [Prime number search](/projects/primes/index.html)
 - [Untitled Text Adventure Game Featuring Time Travel](https://github.com/adamcheasley/adventure)
-- ["Rain Check"](https://github.com/mattss/pebble-raincheck/) - weather summary app for the Pebble watch
+
 
 Some of the open source projects to which I've contributed can be found on pypi:  
 [Adam Cheasley on pypi](https://pypi.python.org/pypi?%3Aaction=search&term=adam+cheasley&submit=search)
@@ -24,6 +25,7 @@ Some of the open source projects to which I've contributed can be found on pypi:
 	
 ### Past projects
 
+- ["Rain Check"](https://github.com/mattss/pebble-raincheck/) - weather summary app for the Pebble watch
 - PyRC - An IRC client written in Python
 - [Speak and Sniff](/projects/speakandsniff/index.html)
 - Phone number search engine
