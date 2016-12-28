@@ -15,7 +15,7 @@ The slides from my talk given with Matthew Sital-Singh, "Relstorage for mere mor
 
 Most of my active projects can be viewed and downloaded via my github account: [github.com/adamcheasley](https://github.com/adamcheasley). It's all open source so feel free to take anything you need.
 
-- [Prime number search](/projects/primes/index.html)
+- [Number searches](/projects/primes/index.html)
 - [Untitled Text Adventure Game Featuring Time Travel](https://github.com/adamcheasley/adventure)
 
 
