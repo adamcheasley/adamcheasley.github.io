@@ -26,15 +26,11 @@ Some of the open source projects to which I've contributed can be found on pypi:
 ### Past projects
 
 - ["Rain Check"](https://github.com/mattss/pebble-raincheck/) - weather summary app for the Pebble watch
-- PyRC - An IRC client written in Python
-- [Speak and Sniff](/projects/speakandsniff/index.html)
-- Phone number search engine
-- Gopher Server
+- PyRC - An IRC client written in Python 
+- Speak and Sniff - A hacked router that would speak any plain text packets sent through it. 
+- Phone number search engine - web spider looking for phone numbers. 
+- Gopher Server 
 - [Command line Twitter client](/projects/command_line_twitter/index.html)
 - [Thompson IRC bot](/projects/thompson/index.html)
 - [PyRL](/projects/twitterbot/index.html) - An IRC bot that interacts with Twitter
 - Boddicker IRC bot
-- [whoismakingthetea](/projects/whoismakingthetea/index.html)
-- [iPhone QR code reader](/projects/qrdecoder_iphone/index.html)
-- Binary game
-- [Face](http://someplacenice.co.uk/images/faceproject.html) (requires Flash)
