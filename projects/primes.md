@@ -5,12 +5,15 @@ layout: default
 
 # [Someplace nice](/)
 
-## Amicable numbers
-
-After a small research project into these types of numbers, I set up a script to seek them out. You can see the results here:
-[https://safe-eyrie-79589.herokuapp.com/](https://safe-eyrie-79589.herokuapp.com/)
-
 ## Retired number searches
+
+### Amicable numbers
+
+After a small research project into these types of numbers, I set up a script to seek out amicable pairs. You can see the results here:
+[https://safe-eyrie-79589.herokuapp.com/](https://safe-eyrie-79589.herokuapp.com/)
+After running this for 'a while', I was pointed to this:
+[https://sech.me/boinc/Amicable/](https://sech.me/boinc/Amicable/)
+This appears to have found much larger pairs and so I am now putting my compute power behind this.
 
 ### Prime number search
 
