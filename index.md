@@ -13,5 +13,6 @@ Bristol, UK.
 [Networks/Communities](/networks/)  
 [Projects](/projects/)  
 
-I would love to hear from you:
-adam at someplacenice dot co dot uk
+I would love to hear from you! If you'd like to get in contact, find me on keybase: 
+[Keybase](https://keybase.io/adamfc)
+
