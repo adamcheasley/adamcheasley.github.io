@@ -5,8 +5,7 @@ layout: default
 
 # Adam Forsythe-Cheasley
 
-Software developer and mathematical hobbyist.
-Bristol, UK.
+## Dreamer of dreams.
 
 [Curriculum vitae](https://drive.google.com/file/d/0BzFGayw0cbzGSm1sZWJRUGxUZnM/view?usp=sharing)  
 [Blog](/blog/)  
