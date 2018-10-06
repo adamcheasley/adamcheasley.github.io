@@ -5,7 +5,7 @@ layout: default
 
 # Adam Forsythe-Cheasley
 
-## Dreamer of dreams.
+## Full stack web developer. 
 
 [Curriculum vitae](https://drive.google.com/file/d/0BzFGayw0cbzGSm1sZWJRUGxUZnM/view?usp=sharing)  
 [Blog](/blog/)  
