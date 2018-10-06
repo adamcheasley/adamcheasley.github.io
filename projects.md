@@ -3,7 +3,7 @@ title: Projects
 layout: default
 ---
 
-# [Someplace nice](/)
+# [Adam Forsythe-Cheasley](/)
 
 ## Talks
 
@@ -11,7 +11,7 @@ layout: default
 The slides from my talk given with Matthew Sital-Singh, "Relstorage for mere mortals", can be found [here](https://docs.google.com/presentation/d/1zeJ7MiMitejAdSSUkntHrqHs_Iu9h4q1vYJ1GwQbnpI/edit?usp=sharing).
 
 	
-## Active projects
+## Active personal projects
 
 Most of my active projects can be viewed and downloaded via my github account: [github.com/adamcheasley](https://github.com/adamcheasley). It's all open source so feel free to take anything you need.
 
