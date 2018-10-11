@@ -1,7 +1,9 @@
 body {
     background-color: #fff;
-    font-family: Monaco, monospace;
-    color: #666;
+    font-family: 'Open Sans', sans-serif;
+    color: #6B7FD7;
+    background-image: url(../../static/network-3.svg);
+    background-repeat: no-repeat;
 }
 
 a {
@@ -9,9 +11,17 @@ a {
     text-decoration: none;
 }
 
+ ul {
+   list-style-image: url(../../static/tick.svg);
+ }
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 h1 {
-    font:             Bold 55px Helvetica, Tahoma, sans-serif;
-    letter-spacing:   -0.07em;
+    font-family: 'Roboto', sans-serif;
     width: 100%
 }
 
@@ -21,4 +31,8 @@ h1 {
 
 .post h4 {
     margin-bottom: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
 }
