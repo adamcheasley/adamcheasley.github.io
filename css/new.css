@@ -1,0 +1,38 @@
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    color: #666;
+    background-image: url(../static/network-3.svg);
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #66CCFF;
+    text-decoration: none;
+}
+
+ ul {
+   list-style-image: url(../static/tick.svg);
+ }
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    width: 100%
+}
+
+.post {
+    margin-bottom: 40px;
+}
+
+.post h4 {
+    margin-bottom: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+}
