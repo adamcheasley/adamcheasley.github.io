@@ -4,48 +4,49 @@ https://keybase.io/adamfc
 
 I hereby claim:
 
-  * I am an admin of http://someplacenice.co.uk
+  * I am an admin of https://someplacenice.co.uk
   * I am adamfc (https://keybase.io/adamfc) on keybase.
-  * I have a public key ASAlGinXTq_9fsja00HOzDmC7H6sGooQ0KyVtRkOjJ-R_go
+  * I have a public key ASBIXFbpEsoETGJ0fLE7d1TY5ayT_LVTM7bPu2Jt6_PowQo
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "01206b73bbdca144d7d8983eec5b55764db45f25ee77a71f07a81ba972947c32dab70a",
-            "host": "keybase.io",
-            "kid": "0120251a29d74eaffd7ec8dad341cecc3982ec7eac1a8a10d0ac95b5190e8c9f91fe0a",
-            "uid": "d6ec97d741867d3cb9e63426a6e5fe19",
-            "username": "adamfc"
-        },
-        "merkle_root": {
-            "ctime": 1499328278,
-            "hash": "8039e4c10eeaa35082db4634798c0f6a924e8959e07cfc637aa1992abbf082fb2d3c1134303512264eed3477ab1f88600d9931d6b4840740186f0755d973e83b",
-            "hash_meta": "2bb99edad1d9badc37cc6ec5aeb5295741ea8065d515d35eb4e442952a539ebc",
-            "seqno": 1214001
-        },
-        "service": {
-            "hostname": "someplacenice.co.uk",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "01206b73bbdca144d7d8983eec5b55764db45f25ee77a71f07a81ba972947c32dab70a",
+      "host": "keybase.io",
+      "kid": "0120485c56e912ca044c62747cb13b7754d8e5ac93fcb55333b6cfbb626debf3e8c10a",
+      "uid": "d6ec97d741867d3cb9e63426a6e5fe19",
+      "username": "adamfc"
     },
-    "client": {
-        "name": "keybase.io go client",
-        "version": "1.0.24"
+    "merkle_root": {
+      "ctime": 1544711290,
+      "hash": "3015a7672420c4c51e3701977e9ddc20521574813e56a80197da27b6a74d21def07825b9675973377f690a7309262680100e16e9a7c3c3c246abd15d2c2d22c6",
+      "hash_meta": "cae1e1b9d1351319a32c03e90503c56eb8e7cabd264cf135ced9157248cd283d",
+      "seqno": 4127974
     },
-    "ctime": 1499328344,
-    "expire_in": 504576000,
-    "prev": "b7d81ad857c42c5e38d2d64b0aad3b76f6ec4bb5d1a3f603cff82ac1b9c5eee4",
-    "seqno": 20,
-    "tag": "signature"
+    "service": {
+      "entropy": "9E4lmYT4qNDS6TyXVqXKPlSc",
+      "hostname": "someplacenice.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.11.0"
+  },
+  "ctime": 1544711321,
+  "expire_in": 504576000,
+  "prev": "6db1f515fc48b723a73b52e7d208c5aa3ecf21a4e63f3660d95300e841c50b1f",
+  "seqno": 35,
+  "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgJRop106v/X7I2tNBzsw5gux+rBqKENCslbUZDoyfkf4Kp3BheWxvYWTFA0l7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNmI3M2JiZGNhMTQ0ZDdkODk4M2VlYzViNTU3NjRkYjQ1ZjI1ZWU3N2E3MWYwN2E4MWJhOTcyOTQ3YzMyZGFiNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjUxYTI5ZDc0ZWFmZmQ3ZWM4ZGFkMzQxY2VjYzM5ODJlYzdlYWMxYThhMTBkMGFjOTViNTE5MGU4YzlmOTFmZTBhIiwidWlkIjoiZDZlYzk3ZDc0MTg2N2QzY2I5ZTYzNDI2YTZlNWZlMTkiLCJ1c2VybmFtZSI6ImFkYW1mYyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ5OTMyODI3OCwiaGFzaCI6IjgwMzllNGMxMGVlYWEzNTA4MmRiNDYzNDc5OGMwZjZhOTI0ZTg5NTllMDdjZmM2MzdhYTE5OTJhYmJmMDgyZmIyZDNjMTEzNDMwMzUxMjI2NGVlZDM0NzdhYjFmODg2MDBkOTkzMWQ2YjQ4NDA3NDAxODZmMDc1NWQ5NzNlODNiIiwiaGFzaF9tZXRhIjoiMmJiOTllZGFkMWQ5YmFkYzM3Y2M2ZWM1YWViNTI5NTc0MWVhODA2NWQ1MTVkMzVlYjRlNDQyOTUyYTUzOWViYyIsInNlcW5vIjoxMjE0MDAxfSwic2VydmljZSI6eyJob3N0bmFtZSI6InNvbWVwbGFjZW5pY2UuY28udWsiLCJwcm90b2NvbCI6Imh0dHA6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjI0In0sImN0aW1lIjoxNDk5MzI4MzQ0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImI3ZDgxYWQ4NTdjNDJjNWUzOGQyZDY0YjBhYWQzYjc2ZjZlYzRiYjVkMWEzZjYwM2NmZjgyYWMxYjljNWVlZTQiLCJzZXFubyI6MjAsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAQcfzlo6Oh9q/noIRA6S3WxXsEhn1GdILIHfohvJ6tRFOqqAf5CABeTIpnIyaQBEWSjmxTP7S4CeIXCOoJ79TB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAquNPHeReohurrdMwy9F420AImIjn/P3ZVWeFibyTqRo3RhZ80CAqd2ZXJzaW9uAQ==
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSFxW6RLKBExidHyxO3dU2OWsk/y1UzO2z7tibevz6MEKp3BheWxvYWTESpcCI8QgbbH1FfxItyOnO1Ln0gjFqj7PIaTmPzZg2VMA6EHFCx/EIIJaiKny8q1Jq+EAIZmxEEUX39ODIlmtHyKrCJpAZgYuAgHCo3NpZ8RAdH0UyTWRYnLbnJX8Uzhy2FporaUaY7Q2k1aSIjvbJYrCUkDkVaUA6bJq4hioqZGS3aESHDL0xf8NGvcYsUSzAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIO6M9wyANpPEIcfPVlqkCavhKCZC8JAnwlemWXUL5T+Mo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
