@@ -48,6 +48,11 @@ ul {
   margin-top: 5%;
 }
 
+@media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px) {
+  body {font-size: 12vw;}
+}
 /* @media only screen and (min-width: 768px) {
   body {font-size: 3vw;}
   h1 {font-size: 8vw; padding-top: 2%;}
