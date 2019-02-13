@@ -8,6 +8,7 @@ body {
 p {
   margin: 0;
   padding: 1% 5%;
+  font-size: 12vw;
 }
 
 h1, h2, h3, ul {
