@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 3vw;
+  font-size: 1.6vw;
   background-color: #fdfaf3;
 }
 
@@ -20,7 +20,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 8vw;
+  font-size: 6vw;
   background-color: #eb028b;
   color: #fff;
   padding-bottom: 3%;
@@ -31,6 +31,7 @@ h2 {
   background-color: #02eb62;
   padding-top: 2%;
   padding-bottom: 3%;
+  font-size: 3vw;
 }
 
 h3 {
