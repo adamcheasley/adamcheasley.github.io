@@ -51,6 +51,6 @@ ul {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  body, h2 {font-size: 6vw;}
+  body, h2, h3 {font-size: 6vw;}
   h1 {font-size: 11vw;}
 }
