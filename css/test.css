@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 6vw;
+  font-size: 3vw;
   background-color: #fdfaf3;
 }
 
@@ -20,10 +20,11 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 12vw;
+  font-size: 8vw;
   background-color: #eb028b;
   color: #fff;
   padding-bottom: 3%;
+  padding-top: 2%;
 }
 
 h2 {
@@ -49,10 +50,6 @@ ul {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  body {font-size: 12vw;}
+  body {font-size: 8vw;}
+  h1 {font-size: 12vw;}
 }
-/* @media only screen and (min-width: 768px) {
-  body {font-size: 3vw;}
-  h1 {font-size: 8vw; padding-top: 2%;}
-  p, ul {font-size: 1.8vw;}
-} */
