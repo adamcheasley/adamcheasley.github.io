@@ -10,6 +10,10 @@ p {
   padding: 1% 5%;
 }
 
+a {
+  color: #776b4d;
+}
+
 h1, h2, h3, h4, ul {
   padding: 0 5%;
 }
