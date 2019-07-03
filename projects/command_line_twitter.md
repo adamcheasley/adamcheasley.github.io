@@ -3,8 +3,6 @@ title: Projects
 layout: default
 ---
 
-# [Someplace nice](/)
-
 ## Command line Twitter
 
 The first solution I found for this was [Twirssi](http://twirssi.com/). This is a plug in for the irc client I use called irssi. It is pretty good, but, as I'm not familiar with Perl, I kept running into problems installing it.

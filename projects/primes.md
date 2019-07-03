@@ -3,8 +3,6 @@ title: Projects
 layout: default
 ---
 
-# [Someplace nice](/)
-
 ## Retired number searches
 
 ### Amicable numbers
