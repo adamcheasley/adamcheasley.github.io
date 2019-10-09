@@ -1,6 +1,6 @@
 ---
 title: And yet, you can still feel their presence
-layout: default
+layout: new
 ---
 
 ## A Story
