@@ -6,7 +6,12 @@
     <h1>This is a test</h1>
     <p>Next you will encounter a canvas element</p>
     <canvas width="300" height="300">
-      This text is an alternative inside the canvas element.
     </canvas>
+    <script>
+      const canvas = document.querySelector('canvas');
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = 'green';
+      ctx.fillRect(10, 10, 100, 100);
+    </script>
   </body>
 </html>
