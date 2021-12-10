@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.6vw;
+  font-size: 2vw;
   background-color: #fdfaf3;
 }
 
@@ -31,9 +31,7 @@ h1 {
 }
 
 h2 {
-  background-color: #8D99AE;
-  padding-top: 2%;
-  padding-bottom: 3%;
+  color: #8D99AE;
   font-size: 4vw;
 }
 
