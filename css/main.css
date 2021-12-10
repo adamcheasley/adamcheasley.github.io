@@ -11,7 +11,12 @@ p {
 }
 
 a {
-  color: #2B2D42;
+  color: black;
+}
+
+a:hover {
+  text-decoration-thickness: 0.14em;
+  text-underline-offset: 0.09em;
 }
 
 h1, h2, h3, h4, ul {
