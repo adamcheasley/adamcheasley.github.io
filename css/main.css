@@ -21,17 +21,16 @@ h1, h2, h3, h4, ul {
 h1, h2 {
   font-family: 'Crete Round', serif;
   margin: 0;
+  color: #2B2D42;
 }
 
 h1 {
   font-size: 6vw;
-  color: #2B2D42;
   padding-bottom: 3%;
   padding-top: 2%;
 }
 
 h2 {
-  color: #8D99AE;
   font-size: 4vw;
 }
 
