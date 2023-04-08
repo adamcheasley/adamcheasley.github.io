@@ -1,3 +1,3 @@
-# adamcheasley.github.io
-My personal website written using Jekyll and github pages.
+# Someplace Nice
+Currently building version 1.0
 
