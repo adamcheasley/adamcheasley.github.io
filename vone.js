@@ -22,5 +22,6 @@ function getCookie(cname) {
 
 let time_on_site_cookie_name = "tons";
 let cookie = getCookie(time_on_site_cookie_name);
-debugger;
-setCookie(time_on_site_cookie_name, "this would be the first time they hit the site", 1);
+if (cookie === "") {
+    setCookie(time_on_site_cookie_name, "this would be the first time they hit the site", 1);
+}
