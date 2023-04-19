@@ -5,5 +5,22 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-alert("Hello worlds");
-setCookie("tons", "this would be the first time they hit the site", 1);
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+}
+
+let time_on_site_cookie_name = "tons";
+let cookie = getCookie(time_on_site_cookie_name);
+debugger;
+setCookie(time_on_site_cookie_name, "this would be the first time they hit the site", 1);
