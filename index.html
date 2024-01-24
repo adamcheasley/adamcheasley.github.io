@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adam Cheasley</title>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (max-width: 414px) {
+            #gameCanvas {
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 415px) {
+            #gameCanvasMobile {
+                display: none;
+                background-color: aqua;
+            }
+        }
     </style>
 </head>
 <body>
@@ -12,6 +27,7 @@
     <!-- all the code for this is in the js file below -->
     <!-- please get in touch, i'd love to hear from you. my github username is adamcheasley -->
     <canvas id="gameCanvas" width="1000" height="600"></canvas>
+    <canvas id="gameCanvasMobile" width="414" height="800"></canvas>
     <script src="gameoflife.js"></script>
 </body>
 </html>
