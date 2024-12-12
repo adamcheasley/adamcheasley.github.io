@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fiction</title>
+    <style>
+        body {
+            background-color: #d3d3d3; /* Light grey background */
+            color: #4f4f4f; /* Dark grey text */
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        img {
+            image-rendering: pixelated;
+            border: 1px solid white;
+            margin-bottom: 20px;
+            width: 640px;
+            height: 480px;
+        }
+
+        #prompt {
+            text-align: center;
+            font-size: 2em; /* Increase text size */
+            image-rendering: pixelated; /* Ensure pixelated look */
+        }
+
+        #commandInput {
+            background: #d3d3d3;
+            color: black;
+            border: none;
+            padding: 10px; /* Increase padding for larger appearance */
+            font-family: monospace;
+            font-size: 1.5em; /* Increase input text size */
+            width: 400px; /* Adjust input width for proportion */
+        }
+    </style>
+</head>
+<body>
+    <img src="images/forest.png" alt="Pixelated forest scene">
+    <div id="prompt">
+        <p>YOU ARE IN A FOREST. ENTER COMMAND?</p>
+        <input type="text" id="commandInput" placeholder="__________________">
+    </div>
+
+    <script>
+        document.getElementById('commandInput').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const command = this.value.trim().toLowerCase();
+                if (command === 'north' || command === 'n') {
+                    window.location.href = 'north.html'; // Redirect to the new page
+                } else {
+                    alert('Invalid command! Try again.');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
