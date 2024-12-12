@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Manrope:wght@800&display=swap" rel="stylesheet">
-    <title>someplace nice - forest</title>
+    <title>someplace nice - house</title>
     <style>
         body {
             background-color: #d3d3d3; /* Light grey background */
@@ -54,7 +54,7 @@
     </style>
 </head>
 <body>
-    <img src="images/forest.png" alt="Pixelated forest scene">
+    <img src="../images/house.png" alt="Pixelated forest scene">
     <div id="prompt">
         <p>you are in a forest. enter command?</p>
         <input type="text" id="commandInput" placeholder="__________________">
@@ -65,7 +65,7 @@
             if (event.key === 'Enter') {
                 const command = this.value.trim().toLowerCase();
                 if (command === 'north' || command === 'n') {
-                    window.location.href = 'north.html'; // Redirect to the new page
+                    window.location.href = '/locs/house-in-forest.html'; // Redirect to the new page
                 } else {
                     alert('Invalid command! Try again.');
                 }
