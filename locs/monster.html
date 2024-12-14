@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Manrope:wght@800&display=swap" rel="stylesheet">
-    <title>someplace nice - house</title>
+    <title>someplace nice - a monster!</title>
     <style>
         body {
             background-color: #d3d3d3; /* Light grey background */
@@ -54,27 +54,10 @@
     </style>
 </head>
 <body>
-    <img src="../images/hallway.png" alt="a hallway in an old house">
+    <img src="../images/monster.png" alt="a monster">
     <div id="prompt">
-        <p>you enter the house. you are stood in the hallway. there is a door to the west and one to the north. enter command?</p>
-        <input type="text" id="commandInput" placeholder="__________________">
+        <p>you are attacked by a ferocious monster. you are dead.</p>
     </div>
 
-    <script>
-        document.getElementById('commandInput').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                const command = this.value.trim().toLowerCase();
-                if (command === 'north' || command === 'n') {
-                    window.location.href = '/locs/room1.html';
-                } else if (command === 'west') {
-                    window.location.href = 'locs/monster.html';
-                } else if (command === 'help') {
-                    window.location.href = '/locs/help.html';
-                } else {
-                    alert('Invalid command! Try again.');
-                }
-            }
-        });
-    </script>
 </body>
 </html>
