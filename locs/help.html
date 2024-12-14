@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Manrope:wght@800&display=swap" rel="stylesheet">
-    <title>someplace nice - house</title>
+    <title>someplace nice - help</title>
     <style>
         body {
             background-color: #d3d3d3; /* Light grey background */
@@ -54,27 +54,10 @@
     </style>
 </head>
 <body>
-    <img src="../images/lost.png" alt="you are lost">
+    <img src="../images/help.png" alt="a question mark">
     <div id="prompt">
-        <p>you are lost in the forest, wandering aimlessly. enter command?</p>
-        <input type="text" id="commandInput" placeholder="__________________">
+        <p>use directions like north, south, east and west. in some cases you will need to use other commands e.g. 'eat' or 'enter'</p>
     </div>
 
-    <script>
-        document.getElementById('commandInput').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                const command = this.value.trim().toLowerCase();
-                if (command === 'north' || command === 'n') {
-                    window.location.href = '/locs/house-in-forest.html'; // Redirect to the new page
-                } else if (command === 'west' || command === 'east') {
-                    window.location.href = 'locs/lost-in-forest.html';
-                } else if (command === 'help') {
-                    window.location.href = '/locs/help.html';
-                } else {
-                    alert('Invalid command! Try again.');
-                }
-            }
-        });
-    </script>
 </body>
 </html>

@@ -66,6 +66,8 @@
                 const command = this.value.trim().toLowerCase();
                 if (command === 'north' || command === 'n') {
                     window.location.href = '/locs/house-in-forest.html';
+                } else if (command === 'help') {
+                    window.location.href = '/locs/help.html';
                 } else {
                     alert('Invalid command! Try again.');
                 }
