@@ -3,78 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <title>someplace nice - forest</title>
-    <style>
-        body {
-            background-color: #d3d3d3; /* Light grey background */
-            color: #4f4f4f; /* Dark grey text */
-            font-family: "VT323", serif;
-            font-weight: 400;
-            font-style: normal;
-            font-size: 1.5em;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
+    <title>a message for you</title>
 
-        p {
-            margin-top: 0.1em;
-            margin-bottom: 0.1em;
-        }
-
-        img {
-            image-rendering: pixelated;
-            border: 1px solid white;
-            margin-bottom: 20px;
-            width: 640px;
-            height: 480px;
-        }
-
-        #prompt {
-            text-align: center;
-            font-size: 1.3em; /* Change text size */
-            image-rendering: pixelated; /* Ensure pixelated look */
-        }
-
-        #commandInput {
-            background: #d3d3d3;
-            color: black;
-            border: none;
-            padding: 10px; /* Increase padding for larger appearance */
-            font-family: monospace;
-            font-size: 1.5em; /* Increase input text size */
-            width: 400px; /* Adjust input width for proportion */
-        }
-    </style>
 </head>
 <body>
-    <img src="images/forest.png" alt="Pixelated forest scene">
-    <div id="prompt">
-        <p>you are in a forest. enter command?</p>
-        <input type="text" id="commandInput" placeholder="__________________">
-    </div>
-
-    <script>
-        document.getElementById('commandInput').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                const command = this.value.trim().toLowerCase();
-                if (command === 'north' || command === 'n') {
-                    window.location.href = '/locs/house-in-forest.html';
-                } else if (command === 'help') {
-                    window.location.href = '/locs/help.html';
-                } else if (command === 'west' || command === 'east') {
-                    window.location.href = 'locs/lost-in-forest.html';
-                } else {
-                    alert('Invalid command! Try again.');
-                }
-            }
-        });
-    </script>
+    <p>
+        If you're reading this,
+        you've been in a coma for almost 20 years now.
+        We're trying a new technique. We don't know where this message will end up in your dream, but we hope you see it.
+    </p>
+    <p>Please wake up. We miss you.</p>
 </body>
 </html>
