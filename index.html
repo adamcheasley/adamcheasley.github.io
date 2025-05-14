@@ -21,7 +21,7 @@
       margin-right: auto;
     }
 
-    h1 {
+    h1, h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
     }
@@ -30,6 +30,16 @@
       margin-bottom: 1.2rem;
       font-size: 2rem;
     }
+
+    section {
+        padding: 2rem 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    section:last-of-type {
+        border-bottom: none;
+    }
+
 
     @media (prefers-color-scheme: dark) {
       body {
@@ -40,22 +50,39 @@
   </style>
 </head>
 <body>
-  <h1>I'm a front-end developer who cares.</h1>
 
-  <p>
-    I make websites that work. Like, properly work - for everyone. That means fast, accessible, good looking, and built with actual care. No div soup, no JavaScript bloat, no design trends from a cursed Pinterest board.
-  </p>
+    <section>
+        <h1>I'm a front-end developer who cares.</h1>
 
-  <p>
-    I focus on front-end development because it's where the magic happens: interfaces, interactions, stuff people actually <em>see</em> and <em>use</em>. I care a lot about accessibility — not as a box-ticking exercise, but because I want sites to be usable by as many people as possible, in the real world, on all devices, with slow connections, with screen readers, with life happening around them.
-  </p>
+        <p>
+            I make websites that work. Like, properly work - for everyone. That means fast, accessible, good looking, and built with actual care. No div soup, no JavaScript bloat, no design trends from a cursed Pinterest board.
+        </p>
 
-  <p>
-    That said, I'm not allergic to the back end. I can build the stuff that powers your site too — databases, APIs, server logic — any essential machinery that keeps things ticking along.
-  </p>
+        <p>
+            I focus on front-end development because it's where the magic happens: interfaces, interactions, stuff people actually <em>see</em> and <em>use</em>. I care a lot about accessibility — not as a box-ticking exercise, but because I want sites to be usable by as many people as possible, in the real world, on all devices, with slow connections, with screen readers, with life happening around them.
+        </p>
 
-  <p>
-    I've worked on everything from artist portfolios to e-commerce setups to democracy platforms to weird little web toys. Whether you're looking for clean, human-focused code, or you just want something that doesn't break when you sneeze on it — I can help.
-  </p>
+        <p>
+            That said, I'm not allergic to the back end. I can build the stuff that powers your site too — databases, APIs, server logic — any essential machinery that keeps things ticking along.
+        </p>
+
+        <p>
+            I've worked on everything from artist portfolios to e-commerce setups to democracy platforms to weird little web toys. Whether you're looking for clean, human-focused code, or you just want something that doesn't break when you sneeze on it — I can help.
+        </p>
+    </section>
+
+    <section>
+        <h2>Tools I Like</h2>
+        <p>
+            I write semantic HTML like it's 2008. If I want to feel fancy, I'll write a Sass one-liner that does six things at once. React when it's worth it. Vanilla JS when it's not.
+        </p>
+        <p>
+            For back end stuff, I reach for Python. It's fast to write, easy to reason about, and doesn't make me feel like I'm building a nuclear reactor just to serve an API.
+        </p>
+        <p>
+            I'm also very comfortable in AWS — EC2, S3, Lambda, you name it. I've shipped production stuff that runs there and doesn't fall over.
+        </p>
+    </section>
+
 </body>
 </html>
