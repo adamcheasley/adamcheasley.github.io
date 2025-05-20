@@ -23,12 +23,27 @@
 
     h1, h2 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.4rem;
     }
 
-    p {
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    p, li {
       margin-bottom: 1.2rem;
       font-size: 2rem;
+    }
+
+    .description {
+      font-size: 1.5rem;
+    }
+
+    .project {
+        margin-bottom: 2rem;
+        padding: 1.8rem;
+        background-color: #f0f0f0;
     }
 
     section {
@@ -64,7 +79,7 @@
 <body>
 
     <section>
-        <h1>I'm a front-end developer who cares.</h1>
+        <h1>I'm a front-end developer who cares <span aria-hidden="true">❤️</span></h1>
 
         <p>
             I make websites that work. Like, properly work - for everyone. That means fast, accessible, good looking, and built with actual care. No div soup, no JavaScript bloat, no design trends from a cursed Pinterest board.
@@ -84,7 +99,7 @@
     </section>
 
     <section>
-        <h2>Tools I Like</h2>
+        <h2>Tools I Like <span aria-hidden="true">🛠️</span></h2>
         <p>
             I write semantic HTML like it's 2008. If I want to feel fancy, I'll write a Sass one-liner that does six things at once. React when it's worth it. Vanilla JS when it's not.
         </p>
@@ -95,6 +110,67 @@
             I'm also very comfortable in AWS — EC2, S3, Lambda, you name it. I've shipped production stuff that runs there and doesn't fall over.
         </p>
     </section>
+
+    <section>
+        <h2>Past Projects <span aria-hidden="true">📁</span></h2>
+
+        <div class="project">
+            <h3>Accessibility Work for a Democracy Platform</h3>
+            <p class="description">
+                I've been leading accessibility improvements for Delib, a company that builds democratic participation tools.
+                I kicked off a full front-end audit with an external WCAG specialist, then went through every defect they found and fixed it.
+                Some UI components got rebuilt entirely — cleaner markup, better ARIA patterns, keyboard-friendly by default.
+            </p>
+            <p class="description">
+                I'm still making ongoing improvements as the product evolves. The goal is simple: everything should be usable by everyone.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Full-Stack Build for an Mentoring Platform</h3>
+            <p class="description">
+                Built an entire e-mentoring platform from scratch — front end, back end, the works. Custom UI, responsive design, user accounts, all of it.
+            </p>
+            <p class="description">
+                Also designed and built an in-app messaging system with moderation tools baked in.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>UI/UX Optimisation for an E-Commerce Store</h3>
+            <p class="description">
+                    Worked with an online store to improve how users actually <em>use</em> the site — not just how it looks. Ran A/B tests to figure out what helped people check out faster, find what they needed, and stick around longer.
+            </p>
+            <p class="description">
+                    Made a bunch of UI changes based on the results: layout tweaks, better navigation, simpler forms. Cleaned up the experience without adding noise.
+            </p>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>What I Don't Do <span aria-hidden="true">❌</span></h2>
+        <ul>
+            <li>I don't do 3-hour Slack "standups"</li>
+            <li>I won't work at your startup for equity</li>
+            <li>I don't rewrite everything in the latest JavaScript framework just because it's new</li>
+            <li>I don't use dark patterns to trick users into clicking things</li>
+            <li>I don't push half-built features on a Friday afternoon</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Get in Touch <span aria-hidden="true">📬</span></h2>
+        <p>
+            If all this sounds good to you and you want to chat about a project, or just say hi, drop me a line!
+        </p>
+        <p>
+            adam [at] someplacenice [dot] co [dot] uk
+        </p>
+    </section>
+
+
+
 
 </body>
 </html>
